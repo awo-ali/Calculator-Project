@@ -1,0 +1,120 @@
+* {
+  background-color: rgb(212, 212, 179);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+.grid-container {
+  height: 80vh;
+  width: 40vw;
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas: "display display display display" "clear percentage back divide" "number7 number8 number9 multiplication" "number4 number5 number6 subtraction" "number1 number2 number3 addition" "number0 number0 decimal equals";
+  grid-gap: 1rem;
+}
+
+.grid-container__display {
+  grid-area: display;
+  background-color: lightcyan;
+}
+
+.grid-container__clear {
+  grid-area: clear;
+  background-color: pink;
+}
+
+.grid-container__percentage {
+  grid-area: percentage;
+  background-color: pink;
+}
+
+.grid-container__back {
+  grid-area: back;
+  background-color: pink;
+}
+
+.grid-container__divide {
+  grid-area: divide;
+  background-color: pink;
+}
+
+.grid-container__number7 {
+  grid-area: number7;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__number8 {
+  grid-area: number8;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__number9 {
+  grid-area: number9;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__multiplication {
+  grid-area: multiplication;
+  background-color: aquamarine;
+}
+
+.grid-container__number4 {
+  grid-area: number4;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__number5 {
+  grid-area: number5;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__number6 {
+  grid-area: number6;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__subtraction {
+  grid-area: subtraction;
+  background-color: aquamarine;
+}
+
+.grid-container__number1 {
+  grid-area: number1;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__number2 {
+  grid-area: number2;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__number3 {
+  grid-area: number3;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__addition {
+  grid-area: addition;
+  background-color: aquamarine;
+}
+
+.grid-container__number0 {
+  grid-area: number0;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__decimal {
+  grid-area: decimal;
+  background-color: rgb(236, 208, 156);
+}
+
+.grid-container__equals {
+  grid-area: equals;
+  background-color: aquamarine;
+}/*# sourceMappingURL=styles.css.map */
