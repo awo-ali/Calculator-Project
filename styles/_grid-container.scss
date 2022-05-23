@@ -1,0 +1,31 @@
+
+
+.grid-container {
+    height: 70vh;
+    width: 20vw;
+    margin: 40px;
+    background-color: lightgray;
+    border-radius: 25px;
+    box-shadow: 5px 10px 18px #888888;
+    border: 2px solid black;
+    padding:  20px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+      "display display display display"
+      "clear percentage delete divide"
+      "number7 number8 number9 multiplication"
+      "number4 number5 number6 subtraction"
+      "number1 number2 number3 addition"
+      "number0 number0 decimal equals";
+    
+    grid-gap: 1rem;
+    background: linear-gradient(to right, rgb(139, 213, 118), rgb(81, 176, 126));
+
+}
+
+.grid-container__numbers:hover{
+    background-color: gray;
+    border-radius: 50%;
+}
