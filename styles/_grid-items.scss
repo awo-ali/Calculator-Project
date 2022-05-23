@@ -1,0 +1,117 @@
+@use "./variables" as *;
+
+
+.grid-container__display { 
+    grid-area: display;
+    background-color: rgb(204, 235, 195);
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+}
+
+
+ .grid-container__clear{
+    grid-area: clear;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+ }
+
+ .grid-container__percentage{
+    grid-area: percentage;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+ }
+
+
+.grid-container__delete{
+    grid-area: delete;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+
+.grid-container__divide{
+    grid-area: divide;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number7{
+    grid-area: number7;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number8{
+    grid-area: number8;
+    background-color: rgb(204, 235, 195);
+    border-radius: $border-radius;
+}
+.grid-container__number9{
+    grid-area: number9;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__multiplication{
+    grid-area: multiplication;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number4{
+    grid-area: number4;
+    background-color:$secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number5{
+    grid-area: number5; 
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number6{
+    grid-area: number6;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__subtraction{
+    grid-area: subtraction; 
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number1{
+    grid-area: number1;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number2{
+    grid-area: number2; 
+    background-color:$secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__number3{
+    grid-area: number3;
+    background-color: $secondary-color;   
+    border-radius: $border-radius;
+   
+}
+
+.grid-container__addition{
+    grid-area: addition; 
+    background-color: $primary-color;
+    border-radius: $border-radius;
+
+}
+
+.grid-container__number0{
+    grid-area: number0; 
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__decimal{
+    grid-area: decimal; 
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+.grid-container__equals{
+    grid-area: equals; 
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+
