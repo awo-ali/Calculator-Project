@@ -1,9 +1,10 @@
 # Calculator-Challenge.
 
 For my week-2 challenge, on the nology software engineering course, I built an online calculator.
-I accomplished this using HTML, CSS AND Javascript. Find the brief below.
+I accomplished this using HTML, CSS AND Javascript. 
 
 We’re aiming for the following goals for this project:
+
 1. A working Calculator: The main task is to create a Calculator not only will this test your 
 understanding of JavaScript but how you break down a problem. 
 2. Practice using Git and GitHub flow: We want you to get as much practice as possible 
@@ -12,7 +13,9 @@ using git, GitHub and the command line.
 on all of the course so far. When you get it functioning really push on the UI, use SCSS, 
 BEM, anything else you find on the web....really go mad!
 2
+
 Requirements
+
 • PSEUDOCODE: Do it. Trust me, you will thank yourself.
 • You need to have it as a public repository on GitHub
 o In the repo you will also need a README.md with a short intro to the project.
