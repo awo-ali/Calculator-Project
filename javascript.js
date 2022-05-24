@@ -1,5 +1,5 @@
 //console.log("hello");
-//console.log("world");
+console.log("world");
 
 
 // Global Variables 
@@ -21,6 +21,8 @@ const operators = Array.from(document.getElementsByClassName('grid-container__op
 //console.log(numbers);
 //console.log(operators);
 
+
+
 // create functions
 
 const showOutput = (event) => {
@@ -36,84 +38,45 @@ const showOutput = (event) => {
   };
 
 
-
-const Del = (event) => {
-    display.innerHTML = display.innerHTML.slice(0, -1);
-  };
-
   
-  const clearAllButton = (event ) => {
-    display.innerHTML = "" ;
- };
-
- /*switch (operatorValue) {
-   case '+':
-     result = parseFloat(firstNumber) + parsefloat(secondNumber)
-     display.innerHTML = result
-   break;
- case '-':
-   result = firstNumber - secondNumber
-   break;
-  case '*':
-    result = firstNumber * secondNumber
-    break;
-  case '/':
-      result = firstNumber / secondNumber
-      break;
-   
- } */
+const Del = (event) => {
+  display.innerHTML = display.innerHTML.slice(0, -1);
+};
 
 
- const sum = () => {
-    let secondNumber = firstNumber
-    
-    //let firstNumber = ''
-      if (operatorValue == '+') {
-         return parseFloat(firstNumber) + parseFloat(secondNumber);
-      }
-      else if (operatorValue == '-'){
-        return firstNumber - secondNumber;
-      }
-      else if (operatorValue == '*'){
-        return firstNumber * secondNumber;
-      }
-      else if (operatorValue == '/'){
-        return firstNumber / secondNumber;
-      }
-    
-    
-      equals.addEventListener("click", sum )
-      
-    /*let total = 0;
-    let firstNumber = secondNumber
-    let secondNumber = firstNumber
-     switch (operatorValue) {
-    
-      case '+':
-        total = parseFloat(firstNumber) + parseFloat(secondNumber)
-       return total;
-      break;
-    case '-':
-      result = firstNumber - secondNumber
-      break;
-     case '*':
-       result = firstNumber * secondNumber
-       break;
-     case '/':
-         result = firstNumber / secondNumber
-         break;
-      default:
-         result = 0*/
-        
-    }
-    
-    //display.innerHTML = total;
-    
-    // console.log(total);
-    
+const clearAllButton = (event ) => {
+  display.innerHTML = "" ;
+};
 
 
 
+const calculate = (event) =>{
+ 
+ if (operatorValue == '+') {
+  firstNumber = display.innerHTML.split("+")[0]
+  secondNumber = display.innerHTML.split("+")[1]
+  
+  display.innerHTML= (parseInt(firstNumber) + parseFloat(secondNumber));
+}
+else if (operatorValue == '-'){
+  firstNumber = display.innerHTML.split("-")[0]
+ secondNumber = display.innerHTML.split("-")[1]
+ 
+
+  display.innerHTML= (parseInt(firstNumber) - parseInt(secondNumber));
+}
+else if (operatorValue == 'x'){
+  firstNumber = display.innerHTML.split("x")[0]
+ secondNumber = display.innerHTML.split("x")[1]
+  display.innerHTML= parseInt(firstNumber) * parseFloat(secondNumber);
+}
+else if (operatorValue == '%'){
+  firstNumber = display.innerHTML.split("%")[0]
+ secondNumber = display.innerHTML.split("%")[1]
+  display.innerHTML= parseInt(firstNumber) % parseFloat(secondNumber);
+}
+}
+  
 // return function with eventListener  
 
 numbers.forEach(number => {
@@ -121,15 +84,14 @@ numbers.forEach(number => {
    });
 
 
-   operators.forEach(operator => {
-    operator.addEventListener("click",showOutput )
+ operators.forEach(operator => {
+    operator.addEventListener("click",showOperator)
    });
 
 
 deletOne.addEventListener("click", Del)
 
-
 clearAll.addEventListener("click", clearAllButton)
 
-
+equals.addEventListener("click", calculate )
 
